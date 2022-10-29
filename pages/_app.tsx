@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { SWRConfig } from "swr";
 import { createContext } from "react";
 import useBaskets, { UseItems } from "@lib/useItems";
+import Header from "@components/header";
 
 export const GlobalContext = createContext<UseItems>({});
 
@@ -24,12 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           fetcher: (url: any) => fetch(url).then((response) => response.json()),
         }}
       >
-        <link
-          rel="stylesheet"
-          href="https://cdn.simplecss.org/simple.min.css"
-        ></link>
-
-        <Component {...pageProps} />
+        <main className="overflow-x-hidden box-border text-sm py-2">
+          <Header />
+          <Component {...pageProps} />
+        </main>
       </SWRConfig>
     </GlobalContext.Provider>
   );

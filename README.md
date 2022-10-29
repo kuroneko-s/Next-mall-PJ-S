@@ -43,3 +43,6 @@ BE - NextJS
 Design - tailwindcss = https://tailwindcss.com/
 모바일 화면 지원 여부 - [x] ( 추후 작업 완료 후 판단 )
 ERD - ??? 첨부파일 관련 정도 말곤 필요없을거 같은데
+
+react-motion써서 애니메이션 적극 활용
+다크모드 적용
