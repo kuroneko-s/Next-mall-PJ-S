@@ -2,9 +2,9 @@ import { NextPage } from "next";
 
 const MainHeader: NextPage = () => {
   return (
-    <section className="common bg-red-400 py-2 px-1 flex justify-between xl:w-[1170px]">
+    <section className="common py-2 px-1 flex justify-between xl:w-[1170px] text-gray-500 font-bold">
       <div className="">
-        <ul className="flex space-x-2 text-gray-500 font-bold">
+        <ul className="flex space-x-2">
           <li>웹툰/만화</li>
           <span className="opacity-40">•</span>
           <li>웹소설</li>
