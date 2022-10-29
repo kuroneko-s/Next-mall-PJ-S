@@ -34,3 +34,12 @@
 
 - [ ] dashboard
   - 그래프랑 판매 항목들 지원
+
+## 기술 스택
+
+DB - MONGOOSE ( 업무에선 MariaDB나 MYSQL 같은걸 자주 써서 NOSQL 사용 )
+FE - NextJS.React
+BE - NextJS
+Design - tailwindcss = https://tailwindcss.com/
+모바일 화면 지원 여부 - [x] ( 추후 작업 완료 후 판단 )
+ERD - ??? 첨부파일 관련 정도 말곤 필요없을거 같은데
