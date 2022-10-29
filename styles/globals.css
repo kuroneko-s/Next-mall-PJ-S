@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .common {
-  @apply px-4 mx-auto;
+  @apply px-4 mx-auto xl:w-[1170px];
 }

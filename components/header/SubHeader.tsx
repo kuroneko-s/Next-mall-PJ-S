@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SubHeader: NextPage = () => {
   return (
-    <section className="common flex justify-between xl:w-[1170px] h-9">
+    <section className="common flex justify-between h-9">
       <div className="flex space-x-1 my-auto">
         <Link href={"/"}>
           <a>

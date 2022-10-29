@@ -25,10 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           fetcher: (url: any) => fetch(url).then((response) => response.json()),
         }}
       >
-        <main className="overflow-x-hidden box-border text-sm py-2">
+        <section className="overflow-x-hidden box-border text-sm py-2">
           <Header />
           <Component {...pageProps} />
-        </main>
+        </section>
       </SWRConfig>
     </GlobalContext.Provider>
   );

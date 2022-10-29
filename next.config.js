@@ -14,9 +14,9 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/about",
-        destination: "/",
-        permanent: true,
+        source: "/ebook",
+        destination: "/ebook/recommendation",
+        permanent: false,
       },
     ];
   },
