@@ -37,7 +37,7 @@
 
 ## 기술 스택
 
-DB - MONGOOSE ( 업무에선 MariaDB나 MYSQL 같은걸 자주 써서 NOSQL 사용 )
+DB - mongoDB + prisma ( 업무에선 MariaDB나 MYSQL 같은걸 자주 써서 NOSQL 사용 )
 FE - NextJS.React
 BE - NextJS
 Design - tailwindcss = https://tailwindcss.com/

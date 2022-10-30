@@ -10,8 +10,17 @@ import map from "@images/map.png";
 import BookSlider from "@components/BookSlider";
 import EventSlider from "@components/EventSlider";
 import Item from "@components/Item";
+import type { ItemProps } from "@components/Item";
+import { sampleCreator } from "@lib/itemSample";
 
 const Recommendation: NextPage = () => {
+  const dummy = sampleCreator();
+  let dummyData: ItemProps[][] = [];
+
+  for (let index = 0; index < dummy.length; index += 3) {
+    dummyData.push(dummy.slice(index, index + 3));
+  }
+
   return (
     <main className="h-[400vh]">
       <section className="common my-4 flex justify-between font-bold">
@@ -101,9 +110,17 @@ const Recommendation: NextPage = () => {
           <p className="font-extrabold text-2xl">Title</p>
         </div>
         <div className="flex space-x-1">
-          {new Array(20).fill(1).map((_, i) => {
-            return <Item key={i} />;
-          })}
+          <ul className="flex">
+            {dummyData.map((arr, i) => {
+              return (
+                <ol key={i}>
+                  {arr.map((item, i) => {
+                    return <Item key={i} {...item} />;
+                  })}
+                </ol>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </main>
