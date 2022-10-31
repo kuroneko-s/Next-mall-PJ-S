@@ -112,7 +112,7 @@ const Home: NextPage = () => {
       <h1>품목 리스트</h1>
 
       <div id="item_div">
-        {sampleItemArr &&
+        {/* {sampleItemArr &&
           sampleItemArr.map((item, i) => (
             <Item
               key={item.id}
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 openModal();
               }}
             />
-          ))}
+          ))} */}
       </div>
       <Modal
         closeTimeoutMS={200}

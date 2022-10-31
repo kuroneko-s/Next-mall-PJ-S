@@ -19,7 +19,9 @@
       "@lib/*": ["lib/*"],
       "@components/*": ["components/*"],
       "@images/*": ["images/*"]
-    }
+    },
+    "sourceMap": true,
+    "outDir": "dist"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
