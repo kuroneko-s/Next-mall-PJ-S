@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function EventImgSlider() {
   return (
     <section className="common">
@@ -5,8 +7,11 @@ export default function EventImgSlider() {
         <p className="bg-sky-500 text-white px-3 py-1 rounded-3xl">추천</p>
         <p>기획전</p>
       </div>
-      <div className="bg-slate-300 h-96 rounded-md shadow-md text-center">
-        여기에 슬라이드 들어가야함
+      <div className="h-96 w-full flex space-x-2 justify-center">
+        <motion.div
+          className="h-40 w-40 bg-slate-300"
+          animate={{ x: [0, 100, 0] }}
+        />
       </div>
     </section>
   );
